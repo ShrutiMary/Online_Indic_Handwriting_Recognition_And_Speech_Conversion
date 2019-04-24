@@ -145,6 +145,8 @@ def file():
         response['result']=result
 
         return _corsify_actual_response(jsonify(response))
+   else
+       return flask.jsonify("hello world")
 
 
 
