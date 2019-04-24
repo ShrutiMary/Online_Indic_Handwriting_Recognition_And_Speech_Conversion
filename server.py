@@ -37,8 +37,7 @@ APP_ROUTE=os.path.dirname(os.path.abspath(__file__))
 # print('ddffsdaad',response1['predictions'])
 
 #defining a route for only post requests
-
-'''@app.route('/', methods=['GET'])
+@app.route('/', methods=['GET'])
 
 def index():
 
@@ -59,7 +58,7 @@ def index():
     #returning the response object as json
 
     return flask.jsonify("hello world")
-'''
+
 
 
 @app.route('/<name>')
@@ -82,7 +81,7 @@ def print_int(id):
 
     return _corsify_actual_response(jsonify(response))
 
-@app.route('/',methods=['GET','POST','OPTIONS'])
+@app.route('/search',methods=['GET','POST','OPTIONS'])
 
 def file():
 
@@ -145,8 +144,7 @@ def file():
         response['result']=result
 
         return _corsify_actual_response(jsonify(response))
-   else
-       return flask.jsonify("hello world")
+ 
 
 
 
