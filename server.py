@@ -58,7 +58,7 @@ def index():
 
     #returning the response object as json
 
-    return flask.jsonify("hello")
+    return flask.jsonify("hello world")
 
 
 
