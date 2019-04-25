@@ -44,11 +44,11 @@ def strokeSeg(content):
  fo = open("hindifinal.txt", "r",encoding="utf8")
 
  #letter = "पुनः पय।स करें।"
- letter= "Try"
+ letter= ["Try"]
  for i in fo:
   i=i.rstrip() #returns each line as string removing the last \n character
   if strLabel == i:
-     letter = next(fo)
+     letter[0] =next(fo)
     # print(next(fo), end='')
      break
 
