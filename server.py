@@ -141,7 +141,7 @@ def file():
 
         response={}
 
-        response['result']=123
+        response['result']=result
 
         return _corsify_actual_response(jsonify(response))
  
