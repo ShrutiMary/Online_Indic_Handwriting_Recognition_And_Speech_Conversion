@@ -56,7 +56,7 @@ def strokeSeg(content):
 
 # compareLabel(strokeLabelsList)
 # return strokeLabelsList
- list=[1,2]
- return list
+ #list=[1,2]
+ return letter
 
 #print(letter)
